@@ -27,7 +27,19 @@ class DbDiffApplicationTests {
     private static Map<String, Object> diffDBConfig = new HashMap<>();
 
     static {
+        standardDBConfig.put("ip",".mysql.rds.aliyuncs.com");
+        standardDBConfig.put("port","3306");
+        standardDBConfig.put("dbtype","mysql");
+        standardDBConfig.put("username","");
+        standardDBConfig.put("password","!");
+        standardDBConfig.put("database","standarddb");
 
+        diffDBConfig.put("ip",".mysql.rds.aliyuncs.com");
+        diffDBConfig.put("port","3306");
+        diffDBConfig.put("dbtype","mysql");
+        diffDBConfig.put("username","");
+        diffDBConfig.put("password","!");
+        diffDBConfig.put("database","diff");
     }
 
     @Test
